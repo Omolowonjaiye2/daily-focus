@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Focus</title>
+
+    <link rel="stylesheet" href="dailyfocus.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Daily<span>Focus</span></div>
+
+        <button id="themeBtn">🌙</button>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <p class="small-text">YOUR DAY, YOUR GOALS</p>
+
+            <h1>Focus on what<br><span>matters today.</span></h1>
+
+            <p class="description">
+                Organize your tasks, track your progress,
+                and make today productive.
+            </p>
+
+            <div class="date" id="date"></div>
+        </section>
+
+
+        <section class="dashboard">
+
+            <div class="progress-card">
+
+                <div class="card-top">
+                    <div>
+                        <p>Today's Progress</p>
+                        <h2 id="progressText">0%</h2>
+                    </div>
+
+                    <div class="circle" id="circle">
+                        <span>0%</span>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+            </div>
+
+
+            <div class="tasks-card">
+
+                <div class="tasks-header">
+                    <h2>My Tasks</h2>
+
+                    <span id="taskCount">0 tasks</span>
+                </div>
+
+
+                <div class="add-task">
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="What do you want to accomplish?"
+                    >
+
+                    <button id="addBtn">Add</button>
+
+                </div>
+
+
+                <ul id="taskList"></ul>
+
+            </div>
+
+        </section>
+
+
+        <section class="quote-card">
+
+            <div class="quote-icon">“</div>
+
+            <p id="quote">
+                The secret of getting ahead is getting started.
+            </p>
+
+            <button id="quoteBtn">New motivation</button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Built with HTML, CSS & JavaScript ❤️</p>
+    </footer>
+
+
+    <script src="hero.js"></script>
+
+</body>
+</html>
